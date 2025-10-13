@@ -11,6 +11,8 @@ This script saves hours of manual work by automatically generating translated `.
 * 🌍 Supports multiple target languages
 * ⚡ Fast translation with progress tracking (`tqdm`)
 * 🧩 Simple configuration for any iOS project structure
+* ⚡ One-click updates for all localizations — no need for extra packages
+
 
 ---
 
