@@ -24,7 +24,7 @@ You can either:
 * Clone the repository using **GitHub Desktop** or command line:
 
 ```bash
-git clone https://github.com/your-username/ios-localization-automation.git
+git clone https://github.com/MianMHaroon/translate_strings_xcode-iOS.git
 ```
 
 ---
