@@ -12,7 +12,7 @@ from tqdm import tqdm
 
 # ---------- CONFIG ----------
 BASE_LANG = "en"
-PROJECT_PATH = "./aichat3/Resources/Localization"
+PROJECT_PATH = "./grammarchecker/Resources/Localization"
 DEFAULT_LANGS = []
 BASE_FILENAME = "Localizable.strings"
 
@@ -86,10 +86,23 @@ def parse_strings(file_path, preserve_order=False):
 
 
 def write_strings(file_path, data):
-    """Write key/value pairs into Localizable.strings"""
+    """Write key/value pairs into Localizable.strings with correct quotes and percent handling."""
     with open(file_path, "w", encoding="utf-8") as f:
         for k, v in data.items():
-            f.write(f"\"{k}\" = \"{v}\";\n")
+            # Replace double quotes in value with single quotes for clarity
+            v = v.replace('"', "'")
+
+            # Escape only double quotes (for safety in format)
+            safe_key = k.replace('"', '\\"')
+            safe_val = v.replace('"', '\\"')
+
+            # Fix percent signs
+            safe_val = (
+                safe_val
+                .replace("٪", "%")   # replace Arabic percent
+            )
+
+            f.write(f"\"{safe_key}\" = \"{safe_val}\";\n")
 
 
 # ---------- ASYNC TRANSLATION ----------
@@ -258,3 +271,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
