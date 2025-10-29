@@ -203,3 +203,13 @@ Pull requests are welcome! Open an **issue** on GitHub for bugs or improvements.
 ## 📄 License
 
 This project is licensed under the **MIT License** — free to use, modify, and distribute with attribution.
+
+---
+
+## Author
+
+* Muhammad Haroon
+* Email: mianmharoon72@gmail.com
+* LinkedIn: https://www.linkedin.com/in/mian-haroon
+
+---
