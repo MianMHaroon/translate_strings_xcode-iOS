@@ -82,13 +82,13 @@ This installs:
 **Option 1 — Use pip3 (macOS/Linux):**
 
 ```bash
-pip3 install googletrans==4.0.2-rc1 tqdm
+pip3 install googletrans==4.0.2 tqdm
 ```
 
 **Option 2 — Use Python’s module installer:**
 
 ```bash
-python -m pip install googletrans==4.0.2-rc1 tqdm
+python -m pip install googletrans==4.0.2 tqdm
 ```
 
 **Option 3 — Install latest working version from GitHub:**
